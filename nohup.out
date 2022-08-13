@@ -1,0 +1,28 @@
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified some issues:
+
+WARNINGS:
+todos.Todo: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the TodosConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+
+System check identified 1 issue (0 silenced).
+August 01, 2022 - 22:54:01
+Django version 4.0.6, using settings 'todoApp.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[01/Aug/2022 23:09:57] "GET / HTTP/1.1" 302 0
+[01/Aug/2022 23:09:58] "GET /todos/ HTTP/1.1" 200 4106
+[01/Aug/2022 23:10:00] "POST /todos/22/update HTTP/1.1" 302 0
+[01/Aug/2022 23:10:01] "GET /todos/ HTTP/1.1" 200 4143
+[02/Aug/2022 00:46:23] code 400, message Bad request version ('À\x14À')
+[02/Aug/2022 00:46:23] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[02/Aug/2022 00:46:23] code 400, message Bad request syntax ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03è\x8e')
+[02/Aug/2022 00:46:23] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[02/Aug/2022 00:46:24] "GET / HTTP/1.1" 302 0
+[02/Aug/2022 02:02:08] "GET / HTTP/1.1" 302 0
+[02/Aug/2022 02:02:09] "GET /todos HTTP/1.1" 301 0
+[02/Aug/2022 02:02:09] "GET /todos/ HTTP/1.1" 200 4143
